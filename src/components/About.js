@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-const About = (props) => {
-  const { imageSrc ="https://via.placeholder.com/215", aboutText } = props;
-
+function About({image= "https://via.placeholder.com/215", about}) {
   return (
-    <aside>
-      <img src={imageSrc} alt="blog logo" />
-      <p>{aboutText}</p>
-    </aside>
-  );
+    <div>
+        <aside>
+            <img src={image} alt='blog logo'/>
+            <p>{about}</p>
+        </aside>
+    </div>
+  )
 }
 
-export default About;
+export default About
